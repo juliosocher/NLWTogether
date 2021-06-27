@@ -88,15 +88,15 @@ function activateMenuAtCurrentSection() {
     const sectionId = section.getAttribute('id')
 
     const checkpointStart = checkpoint >= sectionTop
-    const checkpointEnd = checkpoing <= sectionTop + sectionHeight
+    const checkpointEnd = checkpoint <= sectionTop + sectionHeight
 
-    if (checkpointStart & checkpointEnd) {
+    if (checkpointStart && checkpointEnd) {
       document
-        .querySelector('nav ul li a[href*=' + sectionID + ']')
+        .querySelector('nav ul li a[href*=' + sectionId + ']')
         .classList.add('active')
     } else {
       document
-        .querySelector('nav ul li a[href*=' + sectionID + ']')
+        .querySelector('nav ul li a[href*=' + sectionId + ']')
         .classList.remove('active')
     }
   }

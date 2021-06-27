@@ -93,7 +93,7 @@ body {
   );
 }
 
-/*====  LAYOUT ============================ */
+/* Layout */
 .container {
   margin-left: 1.5rem;
   margin-right: 1.5rem;
@@ -141,7 +141,7 @@ body {
   box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.15);
 }
 
-/*====  LOGO ============================ */
+/* Logo */
 .logo {
   font: 700 1.31rem var(--title-font);
   color: var(--title-color);
